@@ -1,19 +1,19 @@
-id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
-1,Sunrise City,Neon Echo,pop,happy,0.82,118,0.84,0.79,0.18
-2,Midnight Coding,LoRoom,lofi,chill,0.42,78,0.56,0.62,0.71
-3,Storm Runner,Voltline,rock,intense,0.91,152,0.48,0.66,0.10
-4,Library Rain,Paper Lanterns,lofi,chill,0.35,72,0.60,0.58,0.86
-5,Gym Hero,Max Pulse,pop,intense,0.93,132,0.77,0.88,0.05
-6,Spacewalk Thoughts,Orbit Bloom,ambient,chill,0.28,60,0.65,0.41,0.92
-7,Coffee Shop Stories,Slow Stereo,jazz,relaxed,0.37,90,0.71,0.54,0.89
-8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22
-9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78
-10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35
-11,Blinding Lights,The Weeknd,pop,energetic,0.84,123,0.75,0.80,0.10
-12,Levitating,Dua Lipa,pop,happy,0.82,125,0.83,0.86,0.08
-13,Strawberry Swing,Coldplay,indie rock,relaxed,0.45,98,0.68,0.50,0.65
-14,Sicko Mode,Travis Scott,hip-hop,intense,0.87,145,0.62,0.77,0.15
-15,Purple Haze,Jimi Hendrix,rock,intense,0.89,148,0.35,0.64,0.12
-16,Harvest Moon,Neil Young,folk,melancholic,0.38,94,0.58,0.45,0.92
-17,Creep,Radiohead,alternative rock,melancholic,0.58,110,0.42,0.55,0.42
-18,Good as Hell,Lizzo,pop,uplifting,0.79,114,0.85,0.83,0.18
+id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness,popularity,release_decade,mood_tags,explicit,instrumentalness,liveness
+1,Sunrise City,Neon Echo,pop,happy,0.82,118,0.84,0.79,0.18,72,2020,euphoric|sunny|upbeat,0,0.02,0.08
+2,Midnight Coding,LoRoom,lofi,chill,0.42,78,0.56,0.62,0.71,65,2020,dreamy|peaceful|focused,0,0.85,0.05
+3,Storm Runner,Voltline,rock,intense,0.91,152,0.48,0.66,0.10,58,2010,aggressive|intense|powerful,0,0.12,0.15
+4,Library Rain,Paper Lanterns,lofi,chill,0.35,72,0.60,0.58,0.86,61,2020,peaceful|dreamy|nostalgic,0,0.90,0.04
+5,Gym Hero,Max Pulse,pop,intense,0.93,132,0.77,0.88,0.05,77,2010,aggressive|powerful|euphoric,0,0.05,0.10
+6,Spacewalk Thoughts,Orbit Bloom,ambient,chill,0.28,60,0.65,0.41,0.92,52,2020,dreamy|ethereal|serene,0,0.95,0.03
+7,Coffee Shop Stories,Slow Stereo,jazz,relaxed,0.37,90,0.71,0.54,0.89,48,2000,nostalgic|warm|cozy,0,0.45,0.30
+8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22,69,2010,nostalgic|moody|cinematic,0,0.20,0.06
+9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78,63,2020,focused|peaceful|calm,0,0.80,0.04
+10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35,71,2010,euphoric|romantic|warm,0,0.08,0.20
+11,Blinding Lights,The Weeknd,pop,energetic,0.84,123,0.75,0.80,0.10,95,2010,euphoric|nostalgic|romantic,0,0.04,0.08
+12,Levitating,Dua Lipa,pop,happy,0.82,125,0.83,0.86,0.08,91,2020,euphoric|upbeat|sunny,0,0.03,0.06
+13,Strawberry Swing,Coldplay,indie rock,relaxed,0.45,98,0.68,0.50,0.65,82,2000,nostalgic|dreamy|peaceful,0,0.15,0.12
+14,Sicko Mode,Travis Scott,hip-hop,intense,0.87,145,0.62,0.77,0.15,93,2010,aggressive|intense|powerful,1,0.05,0.08
+15,Purple Haze,Jimi Hendrix,rock,intense,0.89,148,0.35,0.64,0.12,88,1960,nostalgic|psychedelic|intense,0,0.30,0.60
+16,Harvest Moon,Neil Young,folk,melancholic,0.38,94,0.58,0.45,0.92,79,1990,nostalgic|warm|melancholic,0,0.25,0.35
+17,Creep,Radiohead,alternative rock,melancholic,0.58,110,0.42,0.55,0.42,87,1990,melancholic|nostalgic|raw,1,0.08,0.20
+18,Good as Hell,Lizzo,pop,uplifting,0.79,114,0.85,0.83,0.18,86,2010,euphoric|uplifting|empowering,0,0.04,0.15

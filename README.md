@@ -15,28 +15,28 @@ Replace this paragraph with your own summary of what your version does.
 
 ---
 
-## How The System Works
+## how the system works
 
-Popular streaming services usually match songs to users based on their vibe and tempo compared to what the users already like. My version will prioritise matching the vibe to the user's preferences and ranking the options.
+streaming services match songs based on vibe and tempo. this version scores each song against the user's preferences and returns the top results.
 
-Each song stores: genre, mood, energy, valence, danceability, and acousticness. The UserProfile stores: a favourite genre, a favourite mood, a target energy level, and whether the user likes acoustic music.
+each song stores: genre, mood, energy, valence, danceability, and acousticness. the user profile stores: a favourite genre, a favourite mood, a target energy level, and whether the user likes acoustic music.
 
-### Algorithm Recipe
+### algorithm recipe
 
-Every song is scored out of 100 against a user profile. Points are added across four checks:
-Genre exact match → +30 pts
-Mood exact match → +40 pts
-Energy proximity → 0–20 pts, calculated as `(1 - |user_energy - song_energy|) × 20`
-Attribute bonuses → up to 10 pts:
+every song is scored out of 100. points are added across four checks:
+genre exact match → +30 pts
+mood exact match → +40 pts
+energy proximity → 0–20 pts, calculated as `(1 - |user_energy - song_energy|) × 20`
+attribute bonuses → up to 10 pts:
 +5 if the user likes acoustic and the song's acousticness is above 0.7
 +3 if the mood aligns and valence is above 0.7
 +2 if the mood aligns and danceability is above 0.7
 
-Mood is weighted higher than genre because mood is what the user wants to feel right now. A chill lofi track should beat an intense pop song for someone wanting to wind down, even if pop is their usual genre. Energy is continuous so near-matches still earn points instead of scoring zero. Songs are then sorted by total score and the top results are returned.
+mood is weighted higher than genre because it is what the user feels right now. a chill lofi track should beat intense pop for someone winding down, even if pop is their usual genre. energy is continuous so near-matches still earn points. songs are sorted by total score and the top results are returned.
 
-### Potential Biases
+### potential biases
 
-The mood and genre checks mean a song that is close but not exact scores zero on those categories. A "focused" song gets nothing from a user who asked for "chill" even if the two moods are pretty similar. The system might also favour songs that tick both genre and mood at once, which could push out great mood-only matches from unexpected genres. Also, users with niche tastes (like myself lol) will also see the same songs repeating.
+mood and genre are exact matches only. a "focused" song scores zero for a user who asked for "chill" even if the moods are similar. songs that match both genre and mood tend to dominate, pushing out good mood-only matches from other genres. users with niche tastes will also see the same songs repeating.
 
 ---
 
@@ -219,3 +219,9 @@ A few sentences about what you learned:
 - Where do you think human judgment still matters, even if the model seems "smart"
 
 ![alt text](image.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+![alt text](image-7.png)
