@@ -17,25 +17,27 @@ Replace this paragraph with your own summary of what your version does.
 
 ## How The System Works
 
-Explain your design in plain language.
+Popular streaming services usually match songs to users based on their vibe and tempo compared to what the users already like. My version will prioritise matching the vibe to the user's preferences and ranking the options.
 
-Some prompts to answer:
+Each song stores: genre, mood, energy, valence, danceability, and acousticness. The UserProfile stores: a favourite genre, a favourite mood, a target energy level, and whether the user likes acoustic music.
 
-- What features does each `Song` use in your system
-  - For example: genre, mood, energy, tempo
-- What information does your `UserProfile` store
-- How does your `Recommender` compute a score for each song
-- How do you choose which songs to recommend
+### Algorithm Recipe
 
-You can include a simple diagram or bullet list if helpful.
+Every song is scored out of 100 against a user profile. Points are added across four checks:
+Genre exact match → +30 pts
+Mood exact match → +40 pts
+Energy proximity → 0–20 pts, calculated as `(1 - |user_energy - song_energy|) × 20`
+Attribute bonuses → up to 10 pts:
++5 if the user likes acoustic and the song's acousticness is above 0.7
++3 if the mood aligns and valence is above 0.7
++2 if the mood aligns and danceability is above 0.7
 
-Popular streaming services usually match songs to users based on their vibe and tempo compared to what the users already like.
-My version will prioritise matching the vibe to the user's preferences and ranking the options.
-Claude recommended this mathematical scoring formula: 
-score=0.35×energy+0.30×mood+0.20×acoustic+0.15xgenre
-where proximity=1−∣user preference−song value∣
-Song will have: genre, energy, mood, and acousticness
-UserProfile will have: fav genre, energy level goal, mood preference, acoustic preference
+Mood is weighted higher than genre because mood is what the user wants to feel right now. A chill lofi track should beat an intense pop song for someone wanting to wind down, even if pop is their usual genre. Energy is continuous so near-matches still earn points instead of scoring zero. Songs are then sorted by total score and the top results are returned.
+
+### Potential Biases
+
+The mood and genre checks mean a song that is close but not exact scores zero on those categories. A "focused" song gets nothing from a user who asked for "chill" even if the two moods are pretty similar. The system might also favour songs that tick both genre and mood at once, which could push out great mood-only matches from unexpected genres. Also, users with niche tastes (like myself lol) will also see the same songs repeating.
+
 ---
 
 ## Getting Started

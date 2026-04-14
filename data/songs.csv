@@ -9,3 +9,11 @@ id,title,artist,genre,mood,energy,tempo_bpm,valence,danceability,acousticness
 8,Night Drive Loop,Neon Echo,synthwave,moody,0.75,110,0.49,0.73,0.22
 9,Focus Flow,LoRoom,lofi,focused,0.40,80,0.59,0.60,0.78
 10,Rooftop Lights,Indigo Parade,indie pop,happy,0.76,124,0.81,0.82,0.35
+11,Blinding Lights,The Weeknd,pop,energetic,0.84,123,0.75,0.80,0.10
+12,Levitating,Dua Lipa,pop,happy,0.82,125,0.83,0.86,0.08
+13,Strawberry Swing,Coldplay,indie rock,relaxed,0.45,98,0.68,0.50,0.65
+14,Sicko Mode,Travis Scott,hip-hop,intense,0.87,145,0.62,0.77,0.15
+15,Purple Haze,Jimi Hendrix,rock,intense,0.89,148,0.35,0.64,0.12
+16,Harvest Moon,Neil Young,folk,melancholic,0.38,94,0.58,0.45,0.92
+17,Creep,Radiohead,alternative rock,melancholic,0.58,110,0.42,0.55,0.42
+18,Good as Hell,Lizzo,pop,uplifting,0.79,114,0.85,0.83,0.18
