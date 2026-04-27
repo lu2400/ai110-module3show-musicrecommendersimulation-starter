@@ -13,3 +13,9 @@ venv/
 
 # Pytest cache
 .pytest_cache/
+
+# Spotify OAuth temp state
+.oauth_state
+
+# Environment secrets
+.env

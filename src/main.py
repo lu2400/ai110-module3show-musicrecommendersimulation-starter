@@ -14,7 +14,6 @@ from .recommender import load_songs, recommend_songs
 
 
 def print_recommendations(label: str, user_prefs: dict, recommendations: list) -> None:
-    # ── Header ──────────────────────────────────────────────────────────────
     print(f"\n{'=' * 100}")
     print(f"  {label}")
 
@@ -34,7 +33,6 @@ def print_recommendations(label: str, user_prefs: dict, recommendations: list) -
     print("  " + "  |  ".join(prefs_parts))
     print(f"{'=' * 100}")
 
-    # ── Table rows ───────────────────────────────────────────────────────────
     rows = []
     for rank, (song, score, explanation) in enumerate(recommendations, start=1):
         rows.append([

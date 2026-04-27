@@ -1,4 +1,7 @@
 pandas
 pytest
+requests
+python-dotenv
 streamlit
 tabulate
+groq
